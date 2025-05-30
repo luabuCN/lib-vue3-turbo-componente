@@ -1,0 +1,3 @@
+{
+  "extends": "@lub/typescript-config/base.json"
+}

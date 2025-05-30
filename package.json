@@ -1,0 +1,81 @@
+{
+  "name": "@lub/vue3-component",
+  "description": "This is a modern component library  based on Turborepo + Vue 3.5 + TypeScript.",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.15.9",
+  "author": "zhangchenlin <2939804365@qq.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/luabuCN/lib-vue3-turbo-componente",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luabuCN/lib-vue3-turbo-componente"
+  },
+  "bugs": "https://github.com/luabuCN/lib-vue3-turbo-componente/issues",
+  "keywords": [
+    "component library template",
+    "component library",
+    "ui framework",
+    "ui",
+    "turborepo",
+    "monorepo",
+    "vue3 typescript",
+    "vite6",
+    "turbo"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:docs": "pnpm -F @lub/docs run dev",
+    "dev:play": "pnpm -F @lub/playground run dev",
+    "build": "turbo run build",
+    "build:docs": "pnpm -F @lub/docs run build",
+    "build:gulp": "gulp -f build/gulpfile.js",
+    "publish": "turbo run publish",
+    "lint:eslint": "eslint --max-warnings 0 \"**/*.{ts,tsx,js,jsx,cjs,mjs,vue}\" --fix",
+    "lint:format": "prettier --write \"**/*.{js,jsx,cjs,ts,tsx,mjs,mts,md,vue,scss,css,less,html,json}\"",
+    "lint:style": "stylelint \"**/*.{css,scss,less}\" --fix",
+    "lint:all": "pnpm run lint:eslint && pnpm run lint:style && pnpm run lint:format",
+    "clean": "turbo run clean --continue && rimraf .turbo dist && rm -rf node_modules",
+    "changeset:version": "pnpm changeset && pnpm changeset version",
+    "deps:update": "pnpm update -r --latest",
+    "deps:check": "pnpm outdated -r",
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "turbo run build",
+    "prepare": "husky install",
+    "rename-pkg": "bash ./scripts/rename-package.sh"
+  },
+  "devDependencies": {
+    "@changesets/cli": "catalog:",
+    "@commitlint/cli": "catalog:",
+    "@lub/commitlint-config": "workspace:*",
+    "@lub/directives": "workspace:*",
+    "@lub/eslint-config": "workspace:*",
+    "@lub/hooks": "workspace:*",
+    "@lub/prettier-config": "workspace:*",
+    "@lub/stylelint-config": "workspace:*",
+    "@lub/typescript-config": "workspace:*",
+    "@lub/ui": "workspace:*",
+    "@lub/utils": "workspace:*",
+    "eslint": "catalog:",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "prettier": "catalog:",
+    "rollup": "catalog:",
+    "stylelint": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:",
+    "vue": "catalog:",
+    "rimraf": "catalog:"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9.5"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
+  }
+}
