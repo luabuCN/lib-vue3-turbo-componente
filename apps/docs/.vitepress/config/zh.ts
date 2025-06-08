@@ -35,6 +35,7 @@ export const zh = defineConfig({
         items: [
           { text: 'Button 按钮', link: '/packages/ui/button' },
           { text: 'Dialog 对话框', link: '/packages/ui/dialog' },
+          { text: 'Icon 图标', link: '/packages/ui/icon' },
         ],
       },
       {
