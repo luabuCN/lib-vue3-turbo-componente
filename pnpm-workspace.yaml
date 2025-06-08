@@ -60,3 +60,4 @@ catalog:
   '@unocss/preset-attributify': ^0.63.6
   '@unocss/transformer-directives': ^0.63.6
   '@unocss/transformer-variant-group': ^0.63.6
+  'lucide-vue-next': ^0.513.0
