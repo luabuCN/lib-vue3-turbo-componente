@@ -53,3 +53,4 @@ catalog:
   'ant-design-vue': ^4.2.6
   'vue-router': ^4.5.1
   'rimraf': ^6.0.1
+  'lucide-vue-next': ^0.513.0
