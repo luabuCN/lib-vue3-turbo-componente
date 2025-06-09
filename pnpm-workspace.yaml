@@ -53,3 +53,10 @@ catalog:
   'ant-design-vue': ^4.2.6
   'vue-router': ^4.5.1
   'rimraf': ^6.0.1
+  # UnoCSS基础依赖
+  'unocss': ^0.63.6
+  '@unocss/vite': ^0.63.6
+  '@unocss/preset-uno': ^0.63.6
+  '@unocss/preset-attributify': ^0.63.6
+  '@unocss/transformer-directives': ^0.63.6
+  '@unocss/transformer-variant-group': ^0.63.6

@@ -8,6 +8,8 @@ import 'ant-design-vue/dist/reset.css';
 // 引入@lub/ui
 import MyLibUI from '@lub/ui';
 import '@lub/ui/style.css';
+// 导入UnoCSS
+import 'virtual:uno.css';
 
 const app = createApp(App);
 app.use(Antd); // 全局引入antdv组件

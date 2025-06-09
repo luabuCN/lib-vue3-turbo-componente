@@ -21,6 +21,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "catalog:",
+    "@unocss/vite": "catalog:",
+    "unocss": "catalog:",
     "sass": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:",

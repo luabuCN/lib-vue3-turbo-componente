@@ -10,13 +10,13 @@ export const en = defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       // { text: 'Others', link: '/markdown-examples' },
-      { text: 'Blog', link: 'https://huangmingfu.github.io/my-blog' },
+      { text: 'Blog', link: 'https://github.com/luabuCN/lib-vue3-turbo-componente' },
       {
         text: 'More',
         items: [
           {
             text: 'Changelog',
-            link: 'https://github.com/huangmingfu/vue3-turbo-component-lib-template/blob/master/CHANGELOG.md',
+            link: 'https://github.com/luabuCN/lib-vue3-turbo-componente/blob/master/README.md',
           },
           // {
           //   text: 'Contribute',
@@ -50,8 +50,6 @@ export const en = defineConfig({
         items: [{ text: 'String Utils', link: 'en/packages/utils/string' }],
       },
     ],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/huangmingfu/vue3-turbo-component-lib-template' },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/luabuCN/lib-vue3-turbo-componente' }],
   },
 });

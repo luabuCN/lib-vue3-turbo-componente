@@ -6,7 +6,7 @@ import dts from 'vite-plugin-dts';
 // node
 import path from 'node:path';
 import fs from 'node:fs';
-
+import UnoCSS from '@unocss/vite';
 // 导出 Vite 配置
 export default defineConfig({
   resolve: {
@@ -17,6 +17,7 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
+    UnoCSS(),
     dts({
       // 包含的文件类型
       include: ['src/**/*.{vue,ts,tsx}'],

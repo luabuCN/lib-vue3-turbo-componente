@@ -192,7 +192,7 @@
     "package.json": "pnpm-lock.yaml,pnpm-workspace.yaml,.gitattributes,.gitignore,.gitpod.yml,.npmrc,.browserslistrc,.node-version,.git*,.tazerc.json",
     "eslint.config.mjs": ".eslintignore,.prettierignore,.stylelintignore,.commitlintrc.*,.prettierrc.*,prettier.config.*,stylelint.config.*,.lintstagedrc.mjs,cspell.json"
   },
-  "commentTranslate.hover.enabled": false,
+  "commentTranslate.hover.enabled": true,
   "commentTranslate.multiLineMerge": true,
   "vue.server.hybridMode": true,
   "typescript.tsdk": "node_modules/typescript/lib",

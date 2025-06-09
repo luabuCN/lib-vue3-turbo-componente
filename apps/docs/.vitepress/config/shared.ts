@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 import { vitepressDemoPlugin } from 'vitepress-demo-plugin';
 import path from 'node:path';
+import UnoCSS from '@unocss/vite';
 
 export const shared = defineConfig({
   // 设置基础路径,用于GitHub Pages部署
@@ -17,6 +18,12 @@ export const shared = defineConfig({
   },
   // 配置HTML头部标签
   head: [['link', { rel: 'icon', href: '/lib-vue3-turbo-componente/favicon.ico' }]],
+  // Vite配置
+  vite: {
+    plugins: [
+      UnoCSS() as any, // 添加UnoCSS插件
+    ],
+  },
   // Markdown配置
   markdown: {
     // 配置Markdown解析器
